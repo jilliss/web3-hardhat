@@ -21,6 +21,9 @@ const ETHERSCAN_API_KEY = vars.get("ETHERSCAN_API_KEY");
 /** @type import('hardhat/config').HardhatUserConfig */
 module.exports = {
   solidity: "0.8.28",
+  mocha: {
+    timeout: 10000
+  },
 
   // ...rest of your config...
   networks: {
